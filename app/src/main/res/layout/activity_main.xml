@@ -10,10 +10,32 @@
     android:paddingTop="16dp"
     tools:context="com.maltseva.marta.githubquery.MainActivity">
 
-   <EditText
-       android:id="@+id/et_search_box"
-       android:textSize="22sp"
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/et_search_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter the query and click search"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/tv_url_display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Enter a search query andURL will show up here!"
+        android:textSize="22sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:textSize="18sp"
+            android:text="Make a search and your resukts will show here!"
+            android:id="@+id/tv_github_search_result_json"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </ScrollView>
 
 </LinearLayout>
